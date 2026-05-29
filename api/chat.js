@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     );
 
     const data = await response.json();
-    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || '라율이개바보.';
+    const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || '라율이천재.';
     res.status(200).json({ content: [{ type: 'text', text: reply }] });
   } catch (err) {
     res.status(500).json({ error: err.message });
