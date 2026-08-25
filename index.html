@@ -210,7 +210,7 @@ async function sendMsg(){
   showTyping();
 
   try{
-    // ★ 여기가 핵심: 내 서버(/api/chat)로 보냄 — API 키 노출 없음
+    // ★ 
     const res = await fetch('/api/chat', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
